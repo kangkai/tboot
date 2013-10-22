@@ -7,6 +7,8 @@ AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_SRCDIR([src/tboot.c])
 AC_CONFIG_HEADERS([config.h])
 
+m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
+
 # Checks for programs.
 AC_PROG_CC
 AC_PROG_RANLIB
