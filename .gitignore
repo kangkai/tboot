@@ -17,3 +17,7 @@ cscope*
 !plugins/*.a
 tags
 src/plugins.h
+ar-lib
+depcomp
+install-sh
+missing
