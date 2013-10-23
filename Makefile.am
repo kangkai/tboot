@@ -1,7 +1,6 @@
 SUBDIRS = ext4_utils libcutils libdiskconfig libsparse libminui src
 
 EXTRA_DIST = \
-	directfb \
 	NOTICE \
 	include \
 	plugins

@@ -29,6 +29,10 @@ AC_FUNC_REALLOC
 AC_FUNC_FORK
 AC_CHECK_FUNCS([memset mkfifo pow select strdup strerror strstr])
 
+PKG_CHECK_MODULES([DIRECTFB], [directfb])
+AC_SUBST([DIRECTFB_CFLAGS])
+AC_SUBST([DIRECTFB_LIBS])
+
 # Checks for plugins
 FILE=src/plugins.h
 cat > $FILE << EOF

@@ -35,9 +35,10 @@ AM_CFLAGS = \
 	-DOTA_UPDATE_FILE=\"/cache/update.zip\" \
 	-DDEVICE_NAME=\"medfield\" \
 	-I$(top_srcdir)/kernel-headers \
-	-I$(top_srcdir)/directfb/include/directfb \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)
+
+AM_CFLAGS += $(DIRECTFB_CFLAGS)
 
 tboot_LDADD = \
 	$(top_builddir)/libminui/libminui.a \
@@ -47,11 +48,9 @@ tboot_LDADD = \
 	$(top_builddir)/libsparse/libsparse.a \
 	$(top_builddir)/libcutils/libcutils.a \
 	-lpthread \
-	-lz \
-	-L$(top_srcdir)/directfb/lib \
-	-ldirectfb \
-	-ldirect \
-	-lfusion
+	-lz
+
+tboot_LDADD += $(DIRECTFB_LIBS)
 
 EXTRA_DIST = \
 	plugins.h

@@ -6,5 +6,6 @@ libminui_a_SOURCES = \
 
 AM_CFLAGS = \
 	-m32 \
-	-O2 \
-	-I$(top_srcdir)/directfb/include/directfb
+	-O2
+
+AM_CFLAGS += $(DIRECTFB_CFLAGS)
