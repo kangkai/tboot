@@ -28,5 +28,5 @@ For more advanced usage, please refer to INSTALL.
 
 
 [1]: https://android-review.01.org/#/admin/projects/platform/bootable/droidboot
-[2]: http://en.wikipedia.org/wiki/Android_software_development#Fastboot
+[2]: https://android.googlesource.com/platform/system/core/+/master/fastboot/
 [3]: https://github.com/kangkai/prekit
